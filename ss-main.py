@@ -3,9 +3,9 @@ from time import sleep
 
 # importing modules to run the program
 import user
-import custom
 import help
 import show
+import custom
 import buy
 import bag
 import remove
@@ -28,11 +28,11 @@ while accoundExist:
     if cmd == "help" or cmd =="h":
         help.commands()
 
-    elif cmd == "custom":
-        custom.builder(userName)
-
     elif cmd == "show":
         show.showProduct()
+
+    elif cmd == "custom":
+        custom.builder(userName)
 
     elif cmd == "buy":
         buy.purchase(userName)

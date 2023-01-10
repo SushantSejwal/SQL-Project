@@ -3,24 +3,6 @@ def remove(user):
     import mysql.connector as sql
     from time import sleep
 
-    # checking table exist or not
-    databaseSS = sql.connect(
-        host = "localhost", 
-        user = "root",
-        password = "progress",
-        database = "sushant"
-    )
-    ssExecuter = databaseSS.cursor()
-    ssExecuter.execute("SHOW tables;")
-    tableList = ssExecuter.fetchall()
-    tables = []
-    for i in tableList :
-        tables.append(i[0])
-    if f"{user}CUSTOM" in tables:
-        pass
-    else:
-        print("\n\ncart is empty\n\n")
-        return
 
     # database in which data will store
     databaseConsumer = sql.connect(
