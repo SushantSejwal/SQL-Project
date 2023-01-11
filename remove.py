@@ -75,7 +75,7 @@ def remove(user):
         dataDict = {}
         print("\nIndividual PC Parts\n")
         for num, build in enumerate(purchaseData):
-            print(f"    custom build no. {num}")   
+            print(f"    Item no. {num}")   
             print(f"       Name     - {build[0]}")
             print(f"       Category - {build[1]}")
             print(f"       Price    - ${build[2]}")
